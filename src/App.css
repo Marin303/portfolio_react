@@ -17,7 +17,7 @@ body
 }
 
 .contactIcons i:only-child{
-  @apply hover:text-slate-400
+  @apply hover:text-slate-200
 }
 
 .menu button{
