@@ -12,7 +12,6 @@
   }
 }
 
-
 .contactIcons i:only-child{
   @apply hover:text-slate-200
 }
@@ -20,8 +19,6 @@
 .menu button{
   @apply hover:text-slate-200 tracking-widest
 }
-
-/* 91  209 215*/
 
 .skills p{
   @apply bg-slate-800 p-2 border border-transparent rounded-full

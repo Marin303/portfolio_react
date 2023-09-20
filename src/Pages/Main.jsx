@@ -5,11 +5,11 @@ import Projects from "./Projects";
 const Main = () => {
   return (
     <div className="lg:w-1/2 relative" id="about">
-      <div className="bg-black w-100 pl-20 h-14 lg:hidden flex items-center sticky top-0">
+      <div className="bg-black w-100 md:pl-20 p-5 h-14 lg:hidden flex items-center sticky top-0">
         ABOUT ME
       </div>
       <section className="text-left flex flex-col h-screen gap-4">
-        <div className="p-20">
+        <div className="md:p-20 p-5 text-slate-400">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
             commodi quidem assumenda dolor. Possimus maxime, laudantium ullam
