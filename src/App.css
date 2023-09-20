@@ -1,3 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  body {
+    @apply font-inter text-slate-200 bg-slate-900;
+  }
+}
+
+.contactIcons i:only-child{
+  @apply hover:text-slate-200
+}
+
+.menu button{
+  @apply hover:text-slate-200 tracking-widest
+}
+
+.skills p{
+  @apply bg-slate-800 p-2 border border-transparent rounded-full
+}
+.hoverEffect {
+  @apply transition-all duration-300;
+}
+
+.hoverContainer:hover .hoverEffect {
+  @apply opacity-50 transition-all duration-300;
+}
+
+.hoverContainer .hoverEffect:hover {
+  @apply opacity-100 bg-slate-800 cursor-pointer; 
+}
