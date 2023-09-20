@@ -1,5 +1,6 @@
 import React from "react";
 import Experience from "./Experience";
+import Projects from "./Projects";
 
 const Main = () => {
   return (
@@ -24,6 +25,7 @@ const Main = () => {
           voluptate delectus, libero recusandae fuga?
         </p>
         <Experience />
+        <Projects/>
       </section>
     </div>
   );

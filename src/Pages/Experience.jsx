@@ -1,9 +1,11 @@
 import React from "react";
 
 const Experience = () => {
+
+
   return (
-    <div className="text-sm">
-      <section className="flex gap-4 mt-4">
+    <div className="hoverContainer text-sm">
+      <section className="hoverEffect flex flex-wrap gap-4 mt-4 p-4 rounded">
         <p className="text-xs">JULY-DEC 2022</p>
         <div className="w-1/2">
           <p>FreeCodeCamp - certification</p>
@@ -17,10 +19,14 @@ const Experience = () => {
             fuga voluptatum rem, eos quos, voluptatem qui molestias at quidem
             illo odit!
           </p>
-          <p>ICONS field - skills</p>
+          <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills">
+            <p>HTML</p>
+            <p>Tailwind</p>
+            <p>React</p>
+          </div>
         </div>
       </section>
-      <section className="flex gap-4 mt-4">
+      <section className="hoverEffect flex flex-wrap gap-4 mt-4 p-4 rounded">
         <p className="text-xs">JULY-DEC 2022</p>
         <div className="w-1/2">
           <p>FreeCodeCamp - certification</p>
@@ -34,10 +40,14 @@ const Experience = () => {
             fuga voluptatum rem, eos quos, voluptatem qui molestias at quidem
             illo odit!
           </p>
-          <p>ICONS field - skills</p>
+          <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills">
+            <p>HTML</p>
+            <p>Tailwind</p>
+            <p>React</p>
+          </div>
         </div>
       </section>
-      <section className="flex gap-4 mt-4">
+      <section className="hoverEffect flex flex-wrap gap-4 mt-4 p-4 rounded">
         <p className="text-xs">JULY-DEC 2022</p>
         <div className="w-1/2">
           <p>FreeCodeCamp - certification</p>
@@ -51,7 +61,11 @@ const Experience = () => {
             fuga voluptatum rem, eos quos, voluptatem qui molestias at quidem
             illo odit!
           </p>
-          <p>ICONS field - skills</p>
+          <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills">
+            <p>HTML</p>
+            <p>Tailwind</p>
+            <p>React</p>
+          </div>
         </div>
       </section>
     </div>

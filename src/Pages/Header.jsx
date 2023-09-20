@@ -22,7 +22,7 @@ const Header = () => {
     );
   };
   return (
-    <div className="p-20 h-screen w-1/2 flex flex-col sticky top-0">
+    <div className="p-20 h-screen w-1/2 flex flex-col lg:sticky top-0">
       <section>
         <h1 className="font-bold">Marin Muktić</h1>
         <h2>Frontend developer</h2>
