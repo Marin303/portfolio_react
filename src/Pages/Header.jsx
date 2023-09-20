@@ -22,16 +22,16 @@ const Header = () => {
     );
   };
   return (
-    <div className="p-20 h-screen w-1/2 flex flex-col lg:sticky top-0">
+    <div className="p-20 flex flex-col lg:h-screen lg:w-1/2 lg:sticky lg:top-0">
       <section>
         <h1 className="font-bold">Marin Muktić</h1>
         <h2>Frontend developer</h2>
-        <h4 className="w-2/3 text-slate-400">
+        <h4 className="w-2/3 text-slate-400 pt-2">
           I build user friendly, inclusive products and digital experiences for
           the web.
         </h4>
       </section>
-      <section className="mt-14 gap-4 flex flex-col items-start text-slate-400 font-bold text-sm menu flex-grow">
+      <section className="mt-14 gap-4 hidden lg:flex flex-col items-start text-slate-400 font-bold text-sm menu flex-grow">
         <button>
           <Line><a href="#about">ABOUT</a></Line>
         </button>

@@ -4,7 +4,7 @@ import Main from "./Pages/Main";
 
 function App() {
   return (
-    <div className="bg-slate-900 flex overflow-y-auto">
+    <div className="lg:flex lg:overflow-y-auto">
       <Header />
       <Main/>
     </div>

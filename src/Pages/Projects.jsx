@@ -2,8 +2,11 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div className="text-sm">
-      <section className="flex flex-wrap gap-4 mt-4 p-4 rounded">
+    <div id="projects">
+      <div className="bg-black w-100 pl-20 h-14 lg:hidden flex items-center sticky top-0">
+        PROJECTS
+      </div>
+      <section className="hoverEffect flex flex-wrap justify-around lg:justify-start gap-4 mt-4 p-4 rounded text-sm">
         <p className="text-xs">IMAGE of Projects</p>
         <div className="w-1/2">
           <p>Country research</p>
