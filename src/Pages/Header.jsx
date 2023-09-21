@@ -59,9 +59,9 @@ const Header = () => {
 };
 
   return (
-    <div className="md:p-20 p-5 flex flex-col lg:h-screen lg:w-1/2 lg:sticky lg:top-0">
+    <div className="md:p-20 p-4 flex flex-col lg:h-screen lg:w-1/2 lg:sticky lg:top-0">
       <section>
-        <h1 className="font-bold">Marin Muktić</h1>
+        <h1 className="sm:font-bold">Marin Muktić</h1>
         <h2>Frontend developer</h2>
         <h4 className="w-2/3 text-slate-400 pt-2">
           I build user friendly, inclusive products and digital experiences for
@@ -85,7 +85,7 @@ const Header = () => {
           </Line>
         </button>
       </section>
-      <section className="mt-8 flex gap-4 contactIcons text-slate-400">
+      <section className="mt-8 flex flex-wrap gap-4 contactIcons text-slate-400">
         <a href="https://www.linkedin.com/in/marin-muktic/">
           <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
         </a>
