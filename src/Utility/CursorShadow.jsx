@@ -2,15 +2,15 @@ import React, { useEffect, useRef } from "react";
 
 const CursorShadow = () => {
   const cursorRef = useRef(null);
-  const cursorSize = 20;
+  const cursorSize = 200;
 
   const cursorStyle = {
     width: `${cursorSize}px`,
     height: `${cursorSize}px`,
     position: "fixed",
     borderRadius: "50%",
-    background: "red",
     pointerEvents: "none",
+    background:"radial-gradient(circle, rgba(0,25,74,1) 0%, rgba(0,0,0,0) 80%)"
   };
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const CursorShadow = () => {
       document.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-  return <div id="cursor" ref={cursorRef} style={cursorStyle}></div>;
+  return <div className="cursor" ref={cursorRef} style={cursorStyle}></div>;
 };
 
 export default CursorShadow;

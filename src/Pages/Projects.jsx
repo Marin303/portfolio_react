@@ -2,11 +2,11 @@ import React from "react";
 
 const Projects = () => {
   return (
-    <div id="projects">
+    <div id="projects" className="hoverContainer">
       <div className="bg-black w-100 md:pl-20 p-5 h-14 lg:hidden flex items-center sticky top-0">
         PROJECTS
       </div>
-      <section className="lg:hoverEffect flex flex-col sm:flex-row sm:justify-around lg:justify-start gap-4 mt-4 p-4 rounded text-sm">
+      <section className="hoverEffect flex flex-col sm:flex-row sm:justify-around lg:justify-start gap-4 mt-4 p-4 rounded text-sm">
       <p className="text-xs">IMAGE of Projects</p>
         <div className="md:w-1/2">
           <p>FreeCodeCamp - certification</p>
@@ -26,7 +26,7 @@ const Projects = () => {
           {/* hereImg */}
         </div>
       </section>
-      <section className="lg:hoverEffect flex flex-col sm:flex-row sm:justify-around lg:justify-start gap-4 mt-4 p-4 rounded text-sm">
+      <section className="hoverEffect flex flex-col sm:flex-row sm:justify-around lg:justify-start gap-4 mt-4 p-4 rounded text-sm">
       <p className="text-xs">IMAGE of Projects</p>
         <div className="md:w-1/2">
           <p>FreeCodeCamp - certification</p>
@@ -46,7 +46,7 @@ const Projects = () => {
           {/* hereImg */}
         </div>
       </section>
-      <section className="lg:hoverEffect flex flex-col sm:flex-row sm:justify-around lg:justify-start gap-4 mt-4 p-4 rounded text-sm">
+      <section className="hoverEffect flex flex-col sm:flex-row sm:justify-around lg:justify-start gap-4 mt-4 p-4 rounded text-sm">
       <p className="text-xs">IMAGE of Projects</p>
         <div className="md:w-1/2">
           <p>FreeCodeCamp - certification</p>
