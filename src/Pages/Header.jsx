@@ -1,14 +1,48 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
+const sections = ["about", "experience", "projects"];
 const Header = () => {
   const [activeLine, setActiveLine] = useState("about");
   const longLine = "-----------------------";
   const shortLine = "------------------";
+  const divRef = useRef(null);
+
+ useEffect(() => {
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          setActiveLine(entry.target.id);
+        }
+      });
+    };
+
+    const observerOptions = {
+      root: null,
+      threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(sectionId => {
+      const sectionElem = document.getElementById(sectionId);
+      if (sectionElem) {
+        observer.observe(sectionElem);
+      }
+    });
+
+    return () => {
+      sections.forEach(sectionId => {
+        const sectionElem = document.getElementById(sectionId);
+        if (sectionElem) {
+          observer.unobserve(sectionElem);
+        }
+      });
+    };
+  }, []);
 
   const Line = ({ children, isActive }) => {
     const [isHovered, setIsHovered] = useState(false);
-    const divRef = useRef(null);
-
+    
     return (
       <div 
         ref={divRef} 
@@ -24,7 +58,6 @@ const Header = () => {
     );
 };
 
-  
   return (
     <div className="md:p-20 p-5 flex flex-col lg:h-screen lg:w-1/2 lg:sticky lg:top-0">
       <section>
