@@ -28,9 +28,14 @@
 }
 
 .hoverContainer:hover .hoverEffect {
-  @apply opacity-50 transition-all duration-300;
+  @apply lg:opacity-50 lg:transition-all lg:duration-300;
 }
 
 .hoverContainer .hoverEffect:hover {
-  @apply opacity-100 bg-slate-800 cursor-pointer; 
+  @apply lg:opacity-100 lg:bg-slate-800 lg:cursor-pointer; 
+}
+
+.cursor
+{
+  @apply hidden lg:block
 }

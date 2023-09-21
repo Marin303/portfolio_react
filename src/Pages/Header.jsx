@@ -1,45 +1,62 @@
 import React, { useEffect, useRef, useState } from "react";
 
+const sections = ["about", "experience", "projects"];
 const Header = () => {
-  const [activeLine, setActiveLine] = useState(null);
+  const [activeLine, setActiveLine] = useState("about");
+  const longLine = "-----------------------";
+  const shortLine = "------------------";
+  const divRef = useRef(null);
 
-
-  const Line = ({ children, isActive }) => {
-    const divRef = useRef(null);
-
-    const handleClickOutside = (e) => {
-      if (divRef.current && !divRef.current.contains(e.target)) {
-        setActiveLine(null);
-      }
+ useEffect(() => {
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
+          setActiveLine(entry.target.id);
+        }
+      });
     };
 
-    useEffect(() => {
-      if (isActive) {
-        document.addEventListener("mousedown", handleClickOutside);
+    const observerOptions = {
+      root: null,
+      threshold: 0.5
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    sections.forEach(sectionId => {
+      const sectionElem = document.getElementById(sectionId);
+      if (sectionElem) {
+        observer.observe(sectionElem);
       }
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, [isActive]);
+    });
 
+    return () => {
+      sections.forEach(sectionId => {
+        const sectionElem = document.getElementById(sectionId);
+        if (sectionElem) {
+          observer.unobserve(sectionElem);
+        }
+      });
+    };
+  }, []);
+
+  const Line = ({ children, isActive }) => {
+    const [isHovered, setIsHovered] = useState(false);
     
-  /*   const handleToggle = () => {
-      setActiveLine((prev) => !prev);
-    }; */
-
     return (
-      <div
-        ref={divRef}
-        
-        className={`${isActive ? "text-white" : ""}`}
+      <div 
+        ref={divRef} 
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className={`${(isActive || isHovered) ? "hovered text-white" : ""}`} 
       >
         <span style={{ letterSpacing: "-2px" }} className="pr-2">
-          {isActive ? "-----------------------" : "------------------"}
+          {isActive || isHovered ? longLine : shortLine}
         </span>
         {children}
       </div>
     );
-  };
+};
 
   return (
     <div className="md:p-20 p-5 flex flex-col lg:h-screen lg:w-1/2 lg:sticky lg:top-0">
