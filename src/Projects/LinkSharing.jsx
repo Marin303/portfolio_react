@@ -30,6 +30,7 @@ const LinkSharing = () => {
             <p>NodeJS</p>
             <p>Amazon S3</p>
             <p>MongoDB</p>
+            <p>Postman</p>
           </div>
         </div>
     </>
