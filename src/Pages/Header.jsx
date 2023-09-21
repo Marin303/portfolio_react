@@ -1,46 +1,30 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 
 const Header = () => {
-  const [activeLine, setActiveLine] = useState(null);
-
+  const [activeLine, setActiveLine] = useState("about");
+  const longLine = "-----------------------";
+  const shortLine = "------------------";
 
   const Line = ({ children, isActive }) => {
+    const [isHovered, setIsHovered] = useState(false);
     const divRef = useRef(null);
 
-    const handleClickOutside = (e) => {
-      if (divRef.current && !divRef.current.contains(e.target)) {
-        setActiveLine(null);
-      }
-    };
-
-    useEffect(() => {
-      if (isActive) {
-        document.addEventListener("mousedown", handleClickOutside);
-      }
-      return () => {
-        document.removeEventListener("mousedown", handleClickOutside);
-      };
-    }, [isActive]);
-
-    
-  /*   const handleToggle = () => {
-      setActiveLine((prev) => !prev);
-    }; */
-
     return (
-      <div
-        ref={divRef}
-        
-        className={`${isActive ? "text-white" : ""}`}
+      <div 
+        ref={divRef} 
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        className={`${(isActive || isHovered) ? "hovered text-white" : ""}`} 
       >
         <span style={{ letterSpacing: "-2px" }} className="pr-2">
-          {isActive ? "-----------------------" : "------------------"}
+          {isActive || isHovered ? longLine : shortLine}
         </span>
         {children}
       </div>
     );
-  };
+};
 
+  
   return (
     <div className="md:p-20 p-5 flex flex-col lg:h-screen lg:w-1/2 lg:sticky lg:top-0">
       <section>
