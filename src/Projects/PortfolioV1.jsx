@@ -24,12 +24,12 @@ const PortfolioV1 = () => {
         <p className="text-slate-400 pt-2">
           The initial iteration indeed felt like a first version, leaving space
           for improvements which I addressed in the second version. Even so, for
-          a junior developer, the first version served a valuable learning
+          a junior developer, the first version served as a valuable experience
           experience. Floating circles are driven by mathematical logic,
           letter-by-letter spelling using loops, traditional contact
           information, and a toggle-based navigation menu. The ability to
           dynamically switch content based on user interactions, combined with a
-          unique glitch effect, gives touch to the project.
+          unique glitch effect, gives a refined touch to the project.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>React</p>
