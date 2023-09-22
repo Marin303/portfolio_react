@@ -33,13 +33,13 @@ const Main = () => {
           <p>
             My portfolio is a representation of all that I've learned and
             accomplished after an official Frontend course, intensive Udemy
-            sessions, insightful lessons from FreeCodeCamp, and challenging
-            Frontend projects.
+            sessions, insightful lessons from FreeCodeCamp and challenging
+            Frontend Mentor projects.
           </p>
           <p>
             When I'm not on my triple-screen monitor, I hone my strategy with
             <span
-              className="pl-1 font-bold cursor-none"
+              className="pl-1 sm:font-bold sm:cursor-none sm:text-slate-300"
               onMouseEnter={() => handleIconHover(chessIcon)}
               onMouseMove={handleMouseMove}
               onMouseLeave={() => setHoveredIcon(null)}
@@ -48,7 +48,7 @@ const Main = () => {
             </span>,
             perfect my aim with
             <span
-              className="pl-1 font-bold cursor-none"
+              className="pl-1 sm:font-bold sm:cursor-none sm:text-slate-300"
               onMouseEnter={() => handleIconHover(dartIcon)}
               onMouseMove={handleMouseMove}
               onMouseLeave={() => setHoveredIcon(null)}
@@ -56,7 +56,7 @@ const Main = () => {
               darts
             </span>, and celebrate weekends with the thrill of
             <span
-              className="pl-1 font-bold cursor-none"
+              className="pl-1 sm:font-bold sm:cursor-none sm:text-slate-300"
               onMouseEnter={() => handleIconHover(football)}
               onMouseMove={handleMouseMove}
               onMouseLeave={() => setHoveredIcon(null)}
@@ -67,7 +67,7 @@ const Main = () => {
               <img
                 src={hoveredIcon}
                 alt="hovered icon"
-                className="fixed"
+                className="sm:fixed sm:block hidden"
                 style={{
                   top: cursorPos.y + 25 + "px",
                   left: cursorPos.x - 10 + "px",
