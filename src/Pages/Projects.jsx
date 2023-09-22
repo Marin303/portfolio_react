@@ -8,6 +8,7 @@ import PasswordGen from "../Projects/PasswordGen";
 import ChatApp from "../Projects/ChatApp";
 import WineShop from "../Projects/WineShop";
 import SignUp from "../Projects/SignUp";
+import PortfolioV1 from "../Projects/PortfolioV1";
 
 import Footer from "./Footer";
 const Projects = () => {
@@ -25,6 +26,7 @@ const Projects = () => {
       </section>
       <AdminDashboard />
       <CountrySearch />
+      <PortfolioV1 />
       <WeatherForecast />
       <IpAdress />
       <PasswordGen />

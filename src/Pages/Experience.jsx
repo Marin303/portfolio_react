@@ -11,7 +11,7 @@ const Experience = () => {
         <div className="md:w-1/2">
           <p>Frontend Development - Algebra Education</p>
           <p>Advanced JavaScript and React Foundations</p>
-          <p className="text-slate-400">
+          <p className="text-slate-400 pt-1">
             I acquired a foundational understanding of HTML, emphasizing the
             structure and content of web pages. My learning curve also
             encompassed advanced CSS techniques, leveraging SASS for better
@@ -41,7 +41,7 @@ const Experience = () => {
             FreeCodeCamp - JavaScript Algorithms and Data Structures
             Certification
           </p>
-          <p className="text-slate-400">
+          <p className="text-slate-400 pt-1">
             During this certification, I dove deep into the core concepts of
             JavaScript. Starting with foundational topics such as variables,
             arrays, and loops, I later ventured into advanced algorithms and
@@ -64,11 +64,13 @@ const Experience = () => {
               href="https://www.freecodecamp.org/certification/Marin03/responsive-web-design"
               target="_blank"
               rel="noreferrer"
+              className="hover:text-emerald-300"
             >
               FreeCodeCamp - Responsive Web Design Certification
+              <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
             </a>
           </p>
-          <p className="text-slate-400">
+          <p className="text-slate-400 pt-1">
             This certification enriched my design perspective, offering an
             in-depth understanding of HTML and CSS. The course modules walked me
             through creating dynamic layouts and responsive designs. I gained

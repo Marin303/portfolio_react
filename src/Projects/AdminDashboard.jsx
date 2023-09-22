@@ -13,8 +13,10 @@ const AdminDashboard = () => {
           href="https://github.com/Marin303/ecommerce"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Admin dashboard
+          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <p className="text-slate-400 pt-2">
           The Admin dashboard's foundation is NextJS, which I've used first

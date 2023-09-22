@@ -13,8 +13,10 @@ const PasswordGen = () => {
           href="https://password-generator-marin.netlify.app/"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Password Generator Web Application
+          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <p className="text-slate-400 pt-2">
           In my quest to explore new React features and great npm packages, I've

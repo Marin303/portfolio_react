@@ -13,8 +13,10 @@ const IpAdress = () => {
           href="https://ip-address-tracker-marin.netlify.app/"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Ip Adress Tracker Web Application
+          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <p className="text-slate-400 pt-2">
           Simply provide a valid IP address, and watch a translation into

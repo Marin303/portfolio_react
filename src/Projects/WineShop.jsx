@@ -13,10 +13,12 @@ const WineShop = () => {
           href="https://wine-shop-marin.netlify.app/"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Wine shop template
+          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
-        <p className="text-slate-400">
+        <p className="text-slate-400 pt-2">
           Landing page to further test and showcase my CSS
           expertise. Frontend for a Wine shop, primed and ready for Backend
           integration to fully realize it as an e-commerce store.
