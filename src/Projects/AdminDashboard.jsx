@@ -13,16 +13,20 @@ const AdminDashboard = () => {
           href="https://github.com/Marin303/ecommerce"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Admin dashboard
+          <span className="pl-2">
+            <i className="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
         </a>
         <p className="text-slate-400 pt-2">
-          The Admin dashboard's foundation is NextJS, which I've used first
-          time. Also did't only offers enhanced performance but also facilitates
-          server-side rendering for a seamless user experience. With NextAuth, I
-          ensure a secure and swift authentication process, which is paramount
-          for any admin-centric application. For faster build, I've used
-          Tailwind, which has been instrumental in crafting a sleek and
+          The Admin dashboard's foundation is NextJS, which I've used for the
+          first time. It does not only offer enhanced performance but also
+          facilitates server-side rendering for a seamless user experience. With
+          NextAuth, I ensure a secure and swift authentication process, which is
+          paramount for any admin-centric application. For faster build, I've
+          used Tailwind, which has been instrumental in crafting a sleek and
           adaptable UI. When it comes to storing assets, Amazon S3 is my choice
           for scalability. I've also incorporated the flexibility of Google
           Cloud, which takes a role in managing various cloud-based operations.

@@ -13,11 +13,13 @@ const PasswordGen = () => {
           href="https://password-generator-marin.netlify.app/"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Password Generator Web Application
+          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <p className="text-slate-400 pt-2">
-          In my quest to explore new React features and great npm packages, I've
+          During my quest to explore new React features and great npm packages, I've
           found out `react-toastify`. While I wasn't sure of the ideal context
           to test it, this application seemed like a fitting playground and it
           integrated flawlessly. The linear gradient coupled with the box shadow

@@ -37,7 +37,7 @@ const Main = () => {
             Frontend Mentor projects.
           </p>
           <p>
-            When I'm not on my triple-screen monitor, I hone my strategy with
+            When I'm not on my triple-screen monitor, I hone my skills with
             <span
               className="pl-1 sm:font-bold sm:cursor-none sm:text-slate-300"
               onMouseEnter={() => handleIconHover(chessIcon)}

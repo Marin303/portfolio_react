@@ -13,10 +13,12 @@ const ChatApp = () => {
           href="https://chat-app-marin.netlify.app/"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Web Chat Application
+          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
-        <p className="text-slate-400">
+        <p className="text-slate-400 pt-2">
           Can two distinct IP addresses engage in real-time within a Web
           Application? By generating unique chat icons with the Scaledrone
           service, I've demonstrated that they can. Admittedly, the user

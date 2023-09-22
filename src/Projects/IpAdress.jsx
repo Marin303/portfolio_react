@@ -13,14 +13,16 @@ const IpAdress = () => {
           href="https://ip-address-tracker-marin.netlify.app/"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Ip Adress Tracker Web Application
+          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <p className="text-slate-400 pt-2">
           Simply provide a valid IP address, and watch a translation into
           latitude and longitude coordinates, and then pinpoint on a map thanks
           to the power of JavaScript. I've employed Parcel for bundling code and
-          securing sensitive keys. Connecting with Vanilla JavaScript wake up a
+          securing sensitive keys. Connecting with Vanilla JavaScript woke up a
           sense of nostalgia, reminding me of the foundational joys of web
           development.
         </p>

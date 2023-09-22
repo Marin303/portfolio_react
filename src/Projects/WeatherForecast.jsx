@@ -13,8 +13,10 @@ const WeatherForecast = () => {
           href="https://weather-app-marin.netlify.app/"
           target="_blank"
           rel="noreferrer"
+          className="hover:text-emerald-300"
         >
           Weather Forecast Web Application
+          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
         </a>
         <p className="text-slate-400 pt-2">
           Temperature, humidity, air pressure, wind deg, visibility, timezone,
