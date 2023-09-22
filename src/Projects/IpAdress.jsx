@@ -22,7 +22,7 @@ const IpAdress = () => {
           Simply provide a valid IP address, and watch a translation into
           latitude and longitude coordinates, and then pinpoint on a map thanks
           to the power of JavaScript. I've employed Parcel for bundling code and
-          securing sensitive keys. Connecting with Vanilla JavaScript wake up a
+          securing sensitive keys. Connecting with Vanilla JavaScript woke up a
           sense of nostalgia, reminding me of the foundational joys of web
           development.
         </p>

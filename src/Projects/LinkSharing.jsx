@@ -16,24 +16,26 @@ const LinkSharing = () => {
           className="hover:text-emerald-300"
         >
           Link Sharing Web Application
-          <span className="pl-2"><i className="fa-solid fa-arrow-up-right-from-square"></i></span>
+          <span className="pl-2">
+            <i className="fa-solid fa-arrow-up-right-from-square"></i>
+          </span>
         </a>
 
         <p className="text-slate-400 pt-2">
           This web application is a seamless integration of modern Frontend and
           Backend technologies. At the heart of Web application is React, which
-          provides a dynamic user interface. For efficient routing and
-          displaying of various pages, React Router has been employed. To ensure
-          fluid state management across pages, I have used React Redux. For
-          persistent data storage within the user's current session, local
-          storage steps in. TailwindCSS accelerates the styling
-          process, allowing for a responsive and sleek design. On the server
-          side, the application is powered by a robust combination of NodeJS and
-          ExpressJS. Image uploads, even for testing, are handled securely using
-          Multer which temporarily saves images locally. For long-term and
-          scalable cloud storage, I chose Amazon S3, ensuring both safety and
-          accessibility. To maintain and manage user data, MongoDB offers a
-          flexible and efficient database solution.
+          provides a dynamic user interface. React Router has been employed for
+          efficient routing and displaying of various pages. To ensure fluid
+          state management across pages, I have used React Redux. For persistent
+          data storage within the user's current session, local storage steps
+          in. TailwindCSS accelerates the styling process, allowing for a
+          responsive and sleek design. On the server side, the application is
+          powered by a robust combination of NodeJS and ExpressJS. Image
+          uploads, even for testing, are handled securely using Multer which
+          temporarily saves images locally. For long-term and scalable cloud
+          storage, I chose Amazon S3, ensuring both safety and accessibility. To
+          maintain and manage user data, MongoDB offers a flexible and efficient
+          database solution.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>React</p>
