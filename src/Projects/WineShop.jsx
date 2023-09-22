@@ -17,13 +17,17 @@ const WineShop = () => {
           Wine shop template
         </a>
         <p className="text-slate-400">
-          Learning basic of JavaScript algorithm, validation, loops Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Voluptates ut architecto
-          rerum enim magni fugiat dolore, corrupti perspiciatis fuga voluptatum
-          rem, eos quos, voluptatem qui molestias at quidem illo odit!
+          Landing page to further test and showcase my CSS
+          expertise. Frontend for a Wine shop, primed and ready for Backend
+          integration to fully realize it as an e-commerce store.
+          Utilizing tools and libraries like React-slideshow and Font Awesome
+          for modern icons, along with the flexibility of Tailwind, the project
+          came to life. Custom animations were particularly crafted
+          with pure CSS, highlighting the depth of my familiarity.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>React</p>
+          <p>Tailwind</p>
           <p>CSS</p>
         </div>
       </div>

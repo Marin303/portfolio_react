@@ -3,13 +3,11 @@ import React, { useEffect, useRef, useState } from "react";
 const sections = ["about", "experience", "projects"];
 const Header = () => {
   const [activeLine, setActiveLine] = useState("about");
-  const longLine = "-----------------------";
-  const shortLine = "------------------";
   const divRef = useRef(null);
 
- useEffect(() => {
+  useEffect(() => {
     const observerCallback = (entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
           setActiveLine(entry.target.id);
         }
@@ -18,12 +16,15 @@ const Header = () => {
 
     const observerOptions = {
       root: null,
-      threshold: 0.5
+      threshold: 0.5,
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
 
-    sections.forEach(sectionId => {
+    sections.forEach((sectionId) => {
       const sectionElem = document.getElementById(sectionId);
       if (sectionElem) {
         observer.observe(sectionElem);
@@ -31,7 +32,7 @@ const Header = () => {
     });
 
     return () => {
-      sections.forEach(sectionId => {
+      sections.forEach((sectionId) => {
         const sectionElem = document.getElementById(sectionId);
         if (sectionElem) {
           observer.unobserve(sectionElem);
@@ -42,21 +43,19 @@ const Header = () => {
 
   const Line = ({ children, isActive }) => {
     const [isHovered, setIsHovered] = useState(false);
-    
+
     return (
       <div 
-        ref={divRef} 
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        className={`${(isActive || isHovered) ? "hovered text-white" : ""}`} 
-      >
-        <span style={{ letterSpacing: "-2px" }} className="pr-2">
-          {isActive || isHovered ? longLine : shortLine}
-        </span>
-        {children}
-      </div>
+      ref={divRef}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className={`flex items-center space-x-2 ${(isActive || isHovered) ? "text-white line-hover" : ""}`} 
+    >
+      <span className={`line ${isActive || isHovered ? "long-line" : "short-line"}`} />
+      {children}
+    </div>
     );
-};
+  };
 
   return (
     <div className="md:p-20 p-4 flex flex-col lg:h-screen lg:w-1/2 lg:sticky lg:top-0">

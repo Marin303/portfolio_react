@@ -17,10 +17,12 @@ const IpAdress = () => {
           Ip Adress Tracker Web Application
         </a>
         <p className="text-slate-400 pt-2">
-          Learning basic of JavaScript algorithm, validation, loops Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Voluptates ut architecto
-          rerum enim magni fugiat dolore, corrupti perspiciatis fuga voluptatum
-          rem, eos quos, voluptatem qui molestias at quidem illo odit!
+          Simply provide a valid IP address, and watch a translation into
+          latitude and longitude coordinates, and then pinpoint on a map thanks
+          to the power of JavaScript. I've employed Parcel for bundling code and
+          securing sensitive keys. Connecting with Vanilla JavaScript wake up a
+          sense of nostalgia, reminding me of the foundational joys of web
+          development.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>HTML</p>
