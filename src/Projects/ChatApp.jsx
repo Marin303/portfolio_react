@@ -17,10 +17,12 @@ const ChatApp = () => {
           Web Chat Application
         </a>
         <p className="text-slate-400">
-          Learning basic of JavaScript algorithm, validation, loops Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Voluptates ut architecto
-          rerum enim magni fugiat dolore, corrupti perspiciatis fuga voluptatum
-          rem, eos quos, voluptatem qui molestias at quidem illo odit!
+          Can two distinct IP addresses engage in real-time within a Web
+          Application? By generating unique chat icons with the Scaledrone
+          service, I've demonstrated that they can. Admittedly, the user
+          interface has room for improvements, but this leaves an adventure for
+          future. The ability to exchange messages in real-time
+          significantly enhances the user experience.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>React</p>

@@ -17,10 +17,12 @@ const WeatherForecast = () => {
           Weather Forecast Web Application
         </a>
         <p className="text-slate-400 pt-2">
-          Learning basic of JavaScript algorithm, validation, loops Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Voluptates ut architecto
-          rerum enim magni fugiat dolore, corrupti perspiciatis fuga voluptatum
-          rem, eos quos, voluptatem qui molestias at quidem illo odit!
+          Temperature, humidity, air pressure, wind deg, visibility, timezone,
+          clouds, timezone, and weather image in one place. I've presented you
+          with my Weather forecast Web application. Fetching data from API and
+          presenting it with React, which enhanced my development journey for
+          one more time. I've employed the CSS Grid to ensure a smooth and
+          responsive presentation, enhancing the user experience.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>React</p>

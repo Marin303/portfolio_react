@@ -17,10 +17,12 @@ const PasswordGen = () => {
           Password Generator Web Application
         </a>
         <p className="text-slate-400 pt-2">
-          Learning basic of JavaScript algorithm, validation, loops Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Voluptates ut architecto
-          rerum enim magni fugiat dolore, corrupti perspiciatis fuga voluptatum
-          rem, eos quos, voluptatem qui molestias at quidem illo odit!
+          In my quest to explore new React features and great npm packages, I've
+          found out `react-toastify`. While I wasn't sure of the ideal context
+          to test it, this application seemed like a fitting playground and it
+          integrated flawlessly. The linear gradient coupled with the box shadow
+          truly shines in this compact web application, enhancing it's visual
+          appeal.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>React</p>

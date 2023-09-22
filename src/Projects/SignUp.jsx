@@ -17,10 +17,13 @@ const SignUp = () => {
           Sign up form Web Application
         </a>
         <p className="text-slate-400">
-          Learning basic of JavaScript algorithm, validation, loops Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Voluptates ut architecto
-          rerum enim magni fugiat dolore, corrupti perspiciatis fuga voluptatum
-          rem, eos quos, voluptatem qui molestias at quidem illo odit!
+          This application showcases field validation achieved through loops,
+          ensuring data integrity. Setting up the project with Vite was swift
+          and efficient, though I'd reserve comparisons with React for another
+          day. My exploration into the .tsx extension has been insightful,
+          especially evident when implementing it on a handler. It's evident
+          that TypeScript offers big potential, and I'm ready to dive deeper
+          into my future projects.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>Vite</p>

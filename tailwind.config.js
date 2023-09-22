@@ -6,6 +6,11 @@ module.exports = {
     extend: {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
+      },transitionProperty: {
+        'width': 'width',
+      },
+      transitionDuration: {
+        '2000': '2s'
       },
     },
   },

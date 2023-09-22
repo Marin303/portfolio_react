@@ -17,10 +17,13 @@ const CountrySearch = () => {
           Country Search Web Application
         </a>
         <p className="text-slate-400 pt-2">
-          Learning basic of JavaScript algorithm, validation, loops Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Voluptates ut architecto
-          rerum enim magni fugiat dolore, corrupti perspiciatis fuga voluptatum
-          rem, eos quos, voluptatem qui molestias at quidem illo odit!
+          This project marked my initial step into connecting with APIs.
+          Through this experience, I've crafted a Web application that fast
+          delivers detailed information on countries, including their
+          population, region, capital, and national flag. Additionally, features
+          as 'Filter by Region' and a light mode toggle not only enhance user
+          experience but have also shown the way for creative ideas in my future
+          projects.
         </p>
         <div className="text-emerald-300 flex flex-wrap gap-2 text-xs skills mt-2">
           <p>React</p>
