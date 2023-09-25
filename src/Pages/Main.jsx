@@ -23,7 +23,7 @@ const Main = () => {
         ABOUT ME
       </div>
       <section className="text-left flex flex-col h-screen gap-4">
-        <div className="md:p-20 p-5 text-slate-400">
+        <div className="md:pt-20 md:pr-20 md:pb-20 p-5 text-slate-400">
           <p>
             My philosophy regarding education and learning is closely related to
             several theories of motivation. By keeping things positive, I

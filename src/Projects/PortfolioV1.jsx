@@ -24,7 +24,7 @@ const PortfolioV1 = () => {
         <p className="text-slate-400 pt-2">
           The initial iteration indeed felt like a first version, leaving space
           for improvements which I addressed in the second version. Even so, for
-          a junior developer, the first version served as a valuable experience
+          a junior developer, the first version served as a valuable
           experience. Floating circles are driven by mathematical logic,
           letter-by-letter spelling using loops, traditional contact
           information, and a toggle-based navigation menu. The ability to
