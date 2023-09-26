@@ -6,7 +6,7 @@ import CursorShadow from "./Utility/CursorShadow";
 function App() {
 
   return (
-    <div className="lg:flex lg:overflow-y-auto relative">
+    <div className="lg:flex lg:overflow-y-auto relative h-screen">
       <CursorShadow/>
       <Header />
       <Main />

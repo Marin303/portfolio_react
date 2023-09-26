@@ -13,12 +13,11 @@ import PortfolioV1 from "../Projects/PortfolioV1";
 import Footer from "./Footer";
 const Projects = () => {
   return (
-    <div className="hoverContainer lg:mt-20">
+    <div className="hoverContainer lg:mt-20" id="projects">
       <div className="bg-black w-100 md:pl-20 p-5 h-14 lg:hidden flex items-center sticky top-0">
         PROJECTS
       </div>
       <section
-        id="projects"
         className="
         hoverEffect flex flex-col sm:flex-row sm:justify-around lg:justify-start gap-4 mt-4 p-4 rounded text-sm"
       >
