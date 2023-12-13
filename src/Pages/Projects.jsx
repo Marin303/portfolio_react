@@ -9,6 +9,8 @@ import ChatApp from "../Projects/ChatApp";
 import WineShop from "../Projects/WineShop";
 import SignUp from "../Projects/SignUp";
 import PortfolioV1 from "../Projects/PortfolioV1";
+import KanbanTaskManagement from "../Projects/KanbanTaskManagement";
+import ShoppingListManager from "../Projects/ShoppingListManager";
 
 import Footer from "./Footer";
 const Projects = () => {
@@ -24,8 +26,10 @@ const Projects = () => {
       >
         <LinkSharing />
       </section>
+      <ShoppingListManager/>
       <AdminDashboard />
       <CountrySearch />
+      <KanbanTaskManagement/>
       <PortfolioV1 />
       <WeatherForecast />
       <IpAdress />
